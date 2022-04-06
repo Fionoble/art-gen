@@ -1,0 +1,29 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+#downloadButton {
+  position: absolute;
+  width: 100px;
+  height: 50;
+  top: 10px;
+  right: 10px;
+  border-radius: 4px;
+  background-color: darkslategrey;
+  color: white;
+  padding: 4px 6px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+#downloadButton:hover {
+  opacity: 1;
+}
+#downloadButton:active {
+  background-color: rgb(55, 121, 110);
+}
