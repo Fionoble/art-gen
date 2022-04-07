@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
     "target": "ESNext",
     "useDefineForClassFields": true,
     "module": "ESNext",
@@ -14,5 +15,9 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true
   },
-  "include": ["src"]
+  "include": ["src"],
+  "rootDirs": ["src", "packages"],
+  "paths": {
+    "@art-gen-utils/*": ["packages/art-gen-utils/*"]
+  }
 }
