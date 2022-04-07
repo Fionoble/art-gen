@@ -15,6 +15,29 @@ export function randomRGBWithinRange(r: number, g: number, b: number, range: num
   return `rgb(${getWithRange(r)}, ${getWithRange(g)}, ${getWithRange(b)})`
 }
 
+export type CircleArgs = { 
+  x: number;
+  y: number;
+  radius: number;
+  color?: string;
+  stroke?: boolean;
+  strokeColor?: string;
+}
+
+export function makeCircle(context: CanvasRenderingContext2D, args: CircleArgs) {
+  const {x, y, radius, color, stroke, strokeColor} = args
+  const fillColor = color ? color : randomRGB()
+  context.beginPath()
+  context.arc(x, y, radius, 0, 2 * Math.PI)
+
+  if(stroke) {
+    context.fillStyle = strokeColor ? strokeColor : fillColor
+    context.stroke()
+  }
+  context.fillStyle = fillColor
+  context.fill()
+}
+
 export type RectArgs = { 
   x: number;
   y: number;
@@ -23,7 +46,6 @@ export type RectArgs = {
   rotation?: number;
   color?: string;
 }
-
 
 export function makeRectWithRotation(context: CanvasRenderingContext2D, args: RectArgs) {
   const {x,y,width,height,rotation, color} = args;
