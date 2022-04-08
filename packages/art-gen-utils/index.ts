@@ -10,9 +10,15 @@ export function randomRGB(asObj = false): String | any {
   return asObj ? {red, green, blue} : `rgb(${red}, ${green}, ${blue})`
 }
 
-export function randomRGBWithinRange(r: number, g: number, b: number, range: number) {
+export function randomRGBWithinRange(r: number, g: number, b: number, range: number, asObj = false): String | any{
   const getWithRange = (v: number) => v - (range/2) + (Math.random()*range);
-  return `rgb(${getWithRange(r)}, ${getWithRange(g)}, ${getWithRange(b)})`
+  const obj = {
+    red: getWithRange(r),
+    green: getWithRange(g),
+    blue: getWithRange(b),
+    toRGBString: () => `rgb(${obj.red}, ${obj.green}, ${obj.blue})`
+  }
+  return asObj ? obj : `rgb(${obj.red}, ${obj.green}, ${obj.blue})`
 }
 
 export type CircleArgs = { 

@@ -1,5 +1,5 @@
 import './style.css'
-import {draw} from './examples/stars'
+import {draw} from './examples/forest-fire'
 
 const dlBtn = document.getElementById('downloadButton')
 const canvas = document.getElementById('myCanvas') as HTMLCanvasElement
