@@ -1,4 +1,6 @@
 import './style.css'
+// import {draw} from './examples/scattered-boxes'
+// import {draw} from './examples/stars'
 import {draw} from './examples/forest-fire'
 
 const dlBtn = document.getElementById('downloadButton')
