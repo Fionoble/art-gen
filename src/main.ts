@@ -1,7 +1,7 @@
 import './style.css'
 // import {draw} from './examples/scattered-boxes'
 // import {draw} from './examples/stars'
-import {draw} from './examples/forest-fire'
+import {draw} from './examples/forest'
 
 const dlBtn = document.getElementById('downloadButton')
 const canvas = document.getElementById('myCanvas') as HTMLCanvasElement
@@ -12,7 +12,6 @@ dlBtn?.addEventListener('click', ()=> {
     l.download = 'filename.png'
     l.href = canvas.toDataURL()
     l.click()
-    console.log(l.href)
 })
 
 canvas.width  = window.innerWidth

@@ -1,4 +1,5 @@
 import './style.css'
+import {draw} from './art'
 
 const dlBtn = document.getElementById('downloadButton')
 const canvas = document.getElementById('myCanvas')
@@ -9,17 +10,10 @@ dlBtn?.addEventListener('click', ()=> {
     l.download = 'Art.png'
     l.href = canvas.toDataURL()
     l.click()
-    console.log(l.href)
 })
 
 // set size
 canvas.width  = window.innerWidth
 canvas.height = window.innerHeight
-
-// do art creation here with context
-const draw = (ctx) => {
-  ctx.fillStyle = 'red'
-  ctx.fillRect(10, 10, 100, 100)
-}
 
 if(context) draw(context)
