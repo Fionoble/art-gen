@@ -93,7 +93,6 @@ export const draw = (ctx: CanvasRenderingContext2D) => {
 
 
 const drawTree = (ctx: CanvasRenderingContext2D, x: number, y: number) => {
-
   ctx.fillStyle = randomRGBWithinRange(71, 33, 9, 10);
   ctx.fillRect(x - 20, y - 20, 40, 50)
   ctx.stroke()

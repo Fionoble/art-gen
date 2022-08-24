@@ -9,11 +9,10 @@
   left:0;
 }
 
-#downloadButton {
+#downloadButton, #redrawButton {
   position: absolute;
   width: 100px;
   height: 50;
-  top: 10px;
   right: 10px;
   border-radius: 4px;
   background-color: darkslategrey;
@@ -23,9 +22,22 @@
   opacity: 0.7;
 }
 
-#downloadButton:hover {
+#downloadButton {
+  top: 10px;
+}
+
+#redrawButton {
+  top: 60px;
+}
+
+#downloadButton:hover, #redrawButton:hover {
   opacity: 1;
 }
-#downloadButton:active {
+#downloadButton:active, #redrawButton:active {
   background-color: rgb(55, 121, 110);
 }
+
+#exampleSelect {
+
+}
+
