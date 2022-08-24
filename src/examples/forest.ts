@@ -9,7 +9,7 @@ const GreenBase = {
 export const draw = (ctx: CanvasRenderingContext2D) => {
   const winW = window.innerWidth;
   const winH = window.innerHeight;
-  const numberOfStars = 250;
+  const numberOfStars = 400;
 
   const baseGreenVariant = randomRGBWithinRange(
     GreenBase.red,
@@ -25,7 +25,7 @@ export const draw = (ctx: CanvasRenderingContext2D) => {
 
   // stars
   for(let i = 0; i < numberOfStars; i++) {
-    const starSize = Math.round(Math.random() * 5)
+    const starSize = Math.round(Math.random() * 3)
     makeCircle(ctx, {
       x: Math.round(Math.random() * winW), 
       y: Math.round(Math.random() * winH/2),
@@ -65,7 +65,25 @@ export const draw = (ctx: CanvasRenderingContext2D) => {
   ctx.stroke(road)  
   ctx.fillStyle = "rgba(255,255,255,0.5)"
   ctx.fill()
+  
+  
+  
+  // moon
+  const moonData = {
+    x: Math.round(Math.random() * winW), 
+    y: Math.round(Math.random() * winH/4),
+    radius: Math.round(20 + Math.random() * 10),
+    color: 'rgb(255, 255, 255)',
+  }
+  
+  ctx.strokeStyle = 'white'
+  ctx.filter = 'blur(20px)'
+  makeCircle(ctx, moonData)
+  ctx.filter = 'none'
+  makeCircle(ctx, moonData)
 
+
+  // trees
   const generatedPoints = [];
   for(let i = 0; i < 250; i ++){
     generatedPoints.push({

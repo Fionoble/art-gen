@@ -40,6 +40,7 @@ export function makeCircle(context: CanvasRenderingContext2D, args: CircleArgs) 
     context.fillStyle = strokeColor ? strokeColor : fillColor
     context.stroke()
   }
+
   context.fillStyle = fillColor
   context.fill()
 }
