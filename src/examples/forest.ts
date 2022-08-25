@@ -125,24 +125,23 @@ const drawTree = (ctx: CanvasRenderingContext2D, x: number, y: number) => {
   ctx.lineTo(x, trunkTop - treeWidth)
   ctx.lineTo(x - (treeWidth/2), trunkTop)
 
-  ctx.strokeStyle = 'yellow'
-  ctx.stroke()
-  ctx.fillStyle = 'green'
+  ctx.fillStyle = randomRGBWithinRange(42, 107, 32, 25);
+  
   ctx.fill()
 
   ctx.restore()
 
-  ctx.beginPath()
-  ctx.moveTo(x - (treeWidth/2) + 20, trunkTop - 10)
-  ctx.lineTo(x + (treeWidth/2) - 20, trunkTop - 10)
-  ctx.lineTo(x, trunkTop - treeWidth + 20)
-  ctx.lineTo(x - (treeWidth/2) + 20, trunkTop - 10)
+  // ctx.beginPath()
+  // ctx.moveTo(x - (treeWidth/2) + 20, trunkTop - 10)
+  // ctx.lineTo(x + (treeWidth/2) - 20, trunkTop - 10)
+  // ctx.lineTo(x, trunkTop - treeWidth + 20)
+  // ctx.lineTo(x - (treeWidth/2) + 20, trunkTop - 10)
   
   const oldWidth = ctx.lineWidth;
   ctx.lineWidth = 10;
   ctx.lineJoin = 'round'
   ctx.lineCap = 'round';
-  ctx.strokeStyle = 'darkgreen'
+  ctx.strokeStyle = randomRGBWithinRange(23, 61, 17, 25);
   ctx.stroke()
   ctx.lineWidth = oldWidth;
 
