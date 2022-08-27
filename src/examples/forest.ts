@@ -79,6 +79,15 @@ export const draw = (ctx: CanvasRenderingContext2D) => {
   ctx.strokeStyle = 'white'
   ctx.filter = 'blur(20px)'
   makeCircle(ctx, moonData)
+  ctx.filter = 'blur(150px)'
+  const n = 
+  makeCircle(ctx, {
+    ...moonData, 
+    ...{
+      radius: 150,
+      color: 'rgba(255, 255, 255, 0.5)',
+    }
+  })
   ctx.filter = 'none'
   makeCircle(ctx, moonData)
 
