@@ -9,10 +9,10 @@
   left:0;
 }
 
-#downloadButton, #redrawButton {
+#downloadButton, #redrawButton, #exampleSelect {
   position: absolute;
   width: 100px;
-  height: 50;
+  height: 25px;
   right: 10px;
   border-radius: 4px;
   background-color: darkslategrey;
@@ -38,6 +38,31 @@
 }
 
 #exampleSelect {
-
+  top:110px;
+  /* position: relative; */
 }
 
+#selectPrompt {
+  padding-bottom: 0px;
+}
+
+.selectItems {
+  background-color: rgba(0,0,0,0.6);
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.hidden {
+  display: none;
+}
+
+.selectItem {
+  width: 100%;
+  margin: 3px 0 7px;
+  border-bottom: 1px darkgray solid;
+  padding-bottom: 4px;
+} 
+
+.selectItem :last-child {
+  border-bottom: 0px;
+}
