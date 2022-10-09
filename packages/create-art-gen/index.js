@@ -4,6 +4,8 @@
 const prompt = require('prompt-sync')();
 const fs = require('fs')
 
+const templateManager = require('./template')
+
 console.log('You\'re creating a new JS Generated Art! 😁')
 console.log('What would you like to call this piece? 🤔')
 
@@ -14,8 +16,15 @@ console.log(`Creating project in ./${cleanName}`)
 fs.mkdir(`./${cleanName}`, {}, (err) => {
   if(err) throw(err)
   else {
-    console.log(`🎉🎉🎉 Project successfully created! 🎉🎉🎉 
-Enjoy make some art-gen and share your work! 🧑‍🎨
-`)
+    
+    console.log(templateManager.artjs)
+    successMessage()
   }
 })
+
+
+function successMessage() {
+  console.log(`🎉🎉🎉 Project successfully created! 🎉🎉🎉 
+  Enjoy make some art-gen and share your work! 🧑‍🎨
+  `)
+}

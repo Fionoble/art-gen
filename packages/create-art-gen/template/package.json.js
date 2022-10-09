@@ -1,4 +1,4 @@
-{
+const packagejson = `{
   "name": "art-gen",
   "private": true,
   "version": "0.0.0",
@@ -10,4 +10,6 @@
   "devDependencies": {
     "vite": "^2.9.0"
   }
-}
+}`
+
+module.exports = packagejson

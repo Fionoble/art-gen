@@ -1,3 +1,4 @@
+const stylecss = `
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -36,3 +37,6 @@
 #downloadButton:active, #redrawButton:active {
   background-color: rgb(55, 121, 110);
 }
+`
+
+module.exports = stylecss

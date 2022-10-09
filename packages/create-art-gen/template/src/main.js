@@ -1,3 +1,4 @@
+const mainjs = `
 import './style.css'
 import {draw} from './art'
 
@@ -17,3 +18,6 @@ canvas.width  = window.innerWidth
 canvas.height = window.innerHeight
 
 if(context) draw(context)
+`
+
+module.exports = mainjs

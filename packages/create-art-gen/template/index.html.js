@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+const indexhtml = `<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,4 +13,5 @@
       <canvas id="myCanvas"></canvas>
     </div>
   </body>
-</html>
+</html>`
+module.exports = indexhtml
