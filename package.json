@@ -5,10 +5,15 @@
   "scripts": {
     "dev": "vite --port 4000",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "new": "node ./packages/create-art-gen/index.js"
   },
   "devDependencies": {
     "typescript": "^4.5.4",
     "vite": "^2.9.0"
+  },
+  "bin": "./packages/create-art-gen/index.js",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
   }
 }
