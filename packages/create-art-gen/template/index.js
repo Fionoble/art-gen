@@ -9,27 +9,27 @@ module.exports = {
   filesData: [
     {
       filePath: 'Readme.md',
-      content:readme,
+      content: readme,
     },
     {
       filePath: 'package.json',
-      content:packagejson,
+      content: packagejson,
     },
     {
       filePath: 'index.html',
-      content:indexhtml,
+      content: indexhtml,
     },
     {
       filePath: 'src/art.js',
-      content:artjs,
+      content: artjs,
     },
     {
       filePath: 'src/main.js',
-      content:mainjs,
+      content: mainjs,
     },
     {
       filePath: 'src/style.css',
-      content:stylecss,
-    },
+      content: stylecss,
+    }
   ]
 }

@@ -6,7 +6,7 @@ const indexhtml = `<!DOCTYPE html>
     <title>Vite App</title>
   </head>
   <body>
-    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/main.js"></script>
     <div id="app">
       <div id="downloadButton">Download Art</div>
       <div id="redrawButton">Redraw</div>
