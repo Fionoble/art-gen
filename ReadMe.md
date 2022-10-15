@@ -1,9 +1,8 @@
 # Code Art!
 
-| This command isn't available yet. you can just clone this repo for now. 
-To get started just run `npx run @fionoble/create-art-gen` and cd into the project.
+To get started just run `npx run @fionoble/art-gen` and cd into the project.
 
-Add your code in the `src/art.js` file! It helps to under stand the canvas element but not super necessary. You can use any of the helpers available in `@fionoble/art-gen-utils`.
+Add your code in the `src/art.js` file! It helps to under stand the canvas element but not super necessary. You can use any of the helpers available in `@fionoble/art-gen`.
 
 See docs here!
 
