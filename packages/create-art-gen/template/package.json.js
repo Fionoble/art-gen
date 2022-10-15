@@ -9,6 +9,9 @@ const packagejson = `{
   },
   "devDependencies": {
     "vite": "^2.9.0"
+  },
+  "dependencies": {
+    "@fionoble/art-gen": "latest"
   }
 }`
 
