@@ -7,7 +7,11 @@
     "package",
     "tutorial"
   ],
-  "homepage": "https://github.com/UserName/package-name",
+  "homepage": "https://fionoble.github.io/art-gen/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fionoble/art-gen.git"
+  },
   "scripts": {
     "dev": "vite --port 4000",
     "build:docs": "tsc && vite build",
